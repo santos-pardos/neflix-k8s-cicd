@@ -1,27 +1,27 @@
 apiVersion: apps/v1 
 kind: Deployment
 metadata:
-  name: kubernetes-demo-hello-app
+  name: kubernetes-demo-netflix
   labels: 
-     app: hello-app
+     app: netflix
 
 spec:
   replicas: 1 
   selector:
     matchLabels:
-      app: hello-app
+      app: netflix
 
   template:
     metadata:
       labels:
-        app: hello-app
+        app: netflix
     spec:
       containers:
-      - name: hello-app
+      - name: netflix
         image: DOCKER_IMAGE
         imagePullPolicy: Always
         ports:
-        - containerPort: 8080
+        - containerPort: 80
   strategy:
     type: RollingUpdate
     rollingUpdate:
