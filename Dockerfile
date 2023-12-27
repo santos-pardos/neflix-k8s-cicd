@@ -1,4 +1,4 @@
-# Neflix_V
+# Neflix_
 FROM nginx:latest
 COPY . /usr/share/nginx/html
 EXPOSE 80
