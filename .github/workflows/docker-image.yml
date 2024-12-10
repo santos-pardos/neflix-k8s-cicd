@@ -7,7 +7,7 @@ on:
     branches: [ "main" ]
 env:
   ECR_REPOSITORY: demo-sv
-  EKS_CLUSTER_NAME: basic-cluster
+  EKS_CLUSTER_NAME: demo03
   AWS_REGION: us-east-1
 
 jobs:
