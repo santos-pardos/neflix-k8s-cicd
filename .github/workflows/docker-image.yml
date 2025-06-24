@@ -1,4 +1,4 @@
-name: Docker Image CI
+name: Docker Image CICD
 
 on:
   push:
@@ -6,8 +6,8 @@ on:
   pull_request:
     branches: [ "main" ]
 env:
-  ECR_REPOSITORY: demo-sv
-  EKS_CLUSTER_NAME: demo03
+  ECR_REPOSITORY: demo-unir
+  EKS_CLUSTER_NAME: demo-cluster
   AWS_REGION: us-east-1
 
 jobs:
